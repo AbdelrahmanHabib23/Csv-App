@@ -1,0 +1,235 @@
+/* Body and container styling */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px; /* Adjusted for a more typical width */
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-size: 3rem; /* Slightly larger text for the heading */
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* Success Message Styles */
+.success-message h1 {
+    color: #4e9e51;  /* Green color for success */
+    font-size: 2.5rem;
+}
+
+.success-message p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Button Styles (for consistent buttons across the site) */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Added box shadow for depth */
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adding focus outline for accessibility */
+}
+
+/* Alert Styles */
+.alert {
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.alert-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.alert-success {
+    background-color: #4e9e51;
+    color: white;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Table Styles */
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    border: 1px solid #ddd; /* Add a border around the entire table */
+    text-align: center;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;  /* Border for both th and td cells */
+    vertical-align: middle; /* Vertically align content */
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600; /* Bold text for headers */
+}
+
+td {
+    background-color: #ffffff;
+}
+
+tr {
+    border-bottom: 1px solid #ddd; /* Border between table rows */
+}
+
+tr:hover td {
+    background-color: #f1f1f1; /* Adding a slight background color on hover */
+}
+
+/* Adding borders between rows with a more defined line */
+
+/* Actions (buttons inside the table rows) */
+.actions a {
+    padding: 8px 16px;
+    justify-content: center;
+    background-color: #28a745;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Subtle box shadow */
+}
+
+.actions a:hover {
+    background-color: #218838;
+}
+
+/* Import and Transfer Button Styles */
+.btn-import, .btn-transfer {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Added box shadow for depth */
+}
+
+.btn-import:hover, .btn-transfer:hover {
+    background-color: rgb(42, 26, 219);
+    transform: scale(1.05);
+}
+
+.btn-import:focus, .btn-transfer:focus {
+    outline: none;
+}
+
+/* Empty State (No accounts available) */
+.no-accounts {
+    text-align: center;
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Action Buttons Container */
+.text-center {
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2.2rem; /* Adjust font size on smaller screens */
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .table th, .table td {
+        padding: 8px; /* Smaller padding for smaller screens */
+    }
+
+    .actions a {
+        padding: 6px 12px; /* Smaller padding for action buttons */
+    }
+}
+
+/* Table Responsive Design */
+.table-responsive {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Custom Toastify Styling */
+.custom-toast {
+    border-radius: 12px;    /* Rounded corners for a smoother appearance */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    font-weight: 600;        /* Make the text bold for better emphasis */
+    color: white;            /* Text color for better contrast */
+    padding: 15px 25px;      /* Increased padding for more spacious appearance */
+    font-size: 1.1rem;       /* Slightly larger text for readability */
+    box-sizing: border-box;  /* Ensure padding does not affect overall size */
+    transition: transform 0.3s ease, opacity 0.5s ease; /* Smooth fade and scale animations */
+}
+
+/* Adding hover effect */
+.custom-toast:hover {
+    transform: scale(1.05);  /* Slight zoom effect when hovering */
+    opacity: 0.9;            /* Reduce opacity slightly for hover interaction */
+}
+
+@keyframes toastSlideIn {
+    0% { transform: translateY(-100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Apply this animation to your custom-toast class */
+.custom-toast {
+    animation: toastSlideIn 0.5s ease-out;
+}

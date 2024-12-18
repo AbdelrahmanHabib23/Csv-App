@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information</title>
+
+    <!-- Link to custom CSS file for consistent styling -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Optional: Add a font link (Google Fonts) for improved typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Page title -->
+        <h1 class="page-title">Account Details</h1>
+
+        <!-- Account Information -->
+        <div class="account-details">
+            <p><strong>Name:</strong> {{ account.name }}</p>
+            <p><strong>Balance:</strong> ${{ account.balance }}</p>
+        </div>
+
+        <!-- Back Button with improved styling -->
+        <div class="text-center">
+            <a href="{% url 'list_accounts' %}" class="btn btn-back">Back to Account List</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Toastify.js/1.12.0/Toastify.min.js"></script>
+
+    <!-- Optional: Add custom JavaScript for interactions -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
